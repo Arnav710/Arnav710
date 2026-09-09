@@ -5,7 +5,7 @@
 **Software Engineer 2 at Adobe**  ·  B.S. Computer Science, UC San Diego
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-arnav--modi-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/arnav-modi/)
-[![Email](https://img.shields.io/badge/Email-amodi%40ucsd.edu-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:amodi@ucsd.edu)
+[![Email](https://img.shields.io/badge/Email-modiarnav01%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:modiarnav01@gmail.com)
 
 </div>
 
@@ -16,7 +16,14 @@
 **Adobe**, on the team building the AI layer over **Workfront**.
 
 I built the **MCP server** that makes Workfront queryable in natural language, now released as
-an official **Anthropic Claude connector** and **OpenAI plugin**. 
+an official **Anthropic Claude connector** and **OpenAI plugin**. Most of the problem is
+**retrieval rather than generation**: customers define their own fields and relationships, so
+the schema is too large to pass to a model, and the agent has to resolve the relevant entities,
+fields, and join paths before a query can be written.
+
+Related work on the same platform: a **feature store** on Snowflake, Feast, and Redis supplying
+field-usage signals to the ranking layer, LLM call optimization that cut **P95 latency from 73s
+to 29s**, and the **Snowflake, Kafka, and Airflow** infrastructure the service reads from.
 
 <br>
 
